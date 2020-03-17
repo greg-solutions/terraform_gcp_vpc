@@ -41,3 +41,7 @@ output "client_key" {
 output "cluster_ca_certificate" {
   value = base64decode(google_container_cluster.google_container_cluster.master_auth.0.cluster_ca_certificate)
 }
+
+output "access_token" {
+  value = data.google_client_config.config.access_token
+}
