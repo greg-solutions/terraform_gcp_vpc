@@ -23,7 +23,7 @@ variable "max_node_count" {
 
 variable "node_machine_type" {
   default = "n1-standard-4"
-  description = "The name of a Google Compute Engine machine type. Defaults to n1-standard-1. To create a custom machine type, value should be set as specified here."
+  description = "The name of a Google Compute Engine machine type. Defaults to n1-standard-4. To create a custom machine type, value should be set as specified here."
 }
 
 variable "cluster_master_username" {
