@@ -8,7 +8,7 @@ resource "google_compute_network" "vpc_network" {
 resource "google_compute_subnetwork" "public_subnet" {
   count = var.subnetwork_count
   ip_cidr_range = cidrsubnet(var.subnetwork_cidr, 8, count.index)
-  name = lower(format("%s-zone-%d", var.network_name, count.index))
+  name = lower(format("%s-subnet-%d", var.network_name, count.index+1))
   network = google_compute_network.vpc_network.self_link
 
   log_config {
