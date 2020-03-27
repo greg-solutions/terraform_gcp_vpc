@@ -9,7 +9,7 @@ variable "subnetwork_cidr" {
 }
 
 variable "region" {
-  default = "europe-west6"
+  default = "Feurope-west6"
 }
 
 variable "zone" {
