@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "Global project ID"
-  default = "kyma-dev"
+  default = "project"
 }
 
 variable "subnetwork_cidr" {
