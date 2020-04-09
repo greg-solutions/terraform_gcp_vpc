@@ -1,7 +1,6 @@
 output "networks" {
   value = google_compute_subnetwork.public_subnet.*.network
 }
-
 output "subnetworks_name" {
   value = google_compute_subnetwork.public_subnet.*.name
 }
